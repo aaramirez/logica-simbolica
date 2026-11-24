@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lógica simbólica</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La lógica como sistema formal y como herramienta de cómputo: sintaxis y semántica, deducción natural, lógica de predicados, corrección y completitud, resolución y Prolog, SAT y SMT, lógica modal y temporal, verificación de modelos y asistentes de demostración.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Lógica <b>simbólica</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Un acertijo que nadie resuelve a mano, formalizado y resuelto en milisegundos</h1>
+  <p class="lede">Cinco casas, cinco dueños, quince pistas: el acertijo de la cebra cansa a cualquiera. Escrito en lógica, un solucionador lo resuelve al instante. Entre una cosa y la otra hay un siglo de ideas: el lenguaje formal, la deducción, los modelos, los teoremas de Gödel y los algoritmos que hoy verifican procesadores y programas. Este curso las recorre en orden, con demostraciones completas y laboratorios donde las fórmulas se evalúan, se deducen y se resuelven.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 13 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de computación y para quien quiera entender cómo razona una máquina. Conviene saber demostrar: la lógica para demostrar, los conjuntos y las funciones están en Elementos de la matemática. La inducción estructural está en Matemáticas discretas.</p>
+    <p><b>Cómo está hecho.</b> Un acertijo lógico acompaña todo el curso: primero se escribe con conectivos, después con cuantificadores, luego se resuelve con resolución, con Prolog, con un solucionador SAT y con Z3, y al final se demuestra su solución en Lean. Los laboratorios dejan escribir fórmulas y ver su árbol, su tabla y su demostración; las prácticas usan herramientas públicas y gratuitas que corren en el navegador o en la terminal.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Lógica proposicional</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="lenguaje-formal"><span class="n">01</span><b>Un lenguaje formal: sintaxis y semántica</b><p>Fórmulas bien formadas, árboles sintácticos y valuaciones: la separación entre lo que se escribe y lo que significa.</p></div>
+    <div class="mod soon" data-id="tablas-y-formas-normales"><span class="n">02</span><b>Tablas de verdad, consecuencia lógica y formas normales</b><p>Tautologías, equivalencias, completitud funcional y las formas normales que usan los solucionadores.</p></div>
+    <div class="mod soon" data-id="deduccion-natural"><span class="n">03</span><b>Deducción natural y cálculo de secuentes</b><p>Demostrar sin tablas: reglas de introducción y eliminación, y el cálculo de secuentes de Gentzen.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Lógica de predicados</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="predicados-y-cuantificadores"><span class="n">04</span><b>Predicados, cuantificadores y formalización</b><p>El lenguaje de primer orden: términos, predicados, variables libres y ligadas, y cómo traducir el español.</p></div>
+    <div class="mod soon" data-id="modelos"><span class="n">05</span><b>Estructuras, modelos y verdad</b><p>La semántica de Tarski: cuándo una fórmula es verdadera en una estructura y qué significa la validez.</p></div>
+    <div class="mod soon" data-id="correccion-y-completitud"><span class="n">06</span><b>Corrección, completitud y los límites de la lógica</b><p>Lo demostrable coincide con lo válido (Gödel, 1929), y lo que eso deja fuera: indecidibilidad e incompletitud.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Razonamiento automático</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="resolucion-y-unificacion"><span class="n">07</span><b>Resolución y unificación</b><p>Una sola regla de inferencia que basta para refutar: forma clausal, skolemización y el algoritmo de Robinson.</p></div>
+    <div class="mod soon" data-id="prolog"><span class="n">08</span><b>Programación lógica con Prolog</b><p>Cláusulas de Horn como programa: resolución SLD, búsqueda con retroceso y el acertijo en pocas líneas.</p></div>
+    <div class="mod soon" data-id="sat"><span class="n">09</span><b>Satisfacibilidad: DPLL y CDCL</b><p>El problema SAT, los algoritmos que lo resuelven en la práctica y cómo codificar problemas reales como fórmulas.</p></div>
+    <div class="mod soon" data-id="smt"><span class="n">10</span><b>SMT y verificación de programas</b><p>SAT más teorías: aritmética, arreglos y bit-vectores con Z3, y la lógica de Hoare para demostrar que un programa es correcto.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Más allá de la lógica clásica</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="modal-y-temporal"><span class="n">11</span><b>Lógica modal y lógica temporal</b><p>Mundos posibles, conocimiento y tiempo: la semántica de Kripke, LTL y CTL.</p></div>
+    <div class="mod soon" data-id="verificacion-de-modelos"><span class="n">12</span><b>Verificación de modelos</b><p>Comprobar automáticamente que un sistema cumple una fórmula temporal, o devolver la ejecución que la viola.</p></div>
+    <div class="mod soon" data-id="asistentes-de-demostracion"><span class="n">13</span><b>Asistentes de demostración: Lean y Coq</b><p>Demostraciones que verifica una máquina, la correspondencia de Curry-Howard y el acertijo demostrado en Lean.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/logica-simbolica" target="_blank" rel="noopener">github.com/aaramirez/logica-simbolica</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
